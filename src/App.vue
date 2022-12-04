@@ -1,15 +1,20 @@
 <template>
-   <h1>Bienvenue dans la To Do Liste</h1>
+  <LoginForm />
+   <Header />
    <ToDoForm />
 </template>
 
 <script>
-import ToDoForm from './components/ToDoForm.vue'
+import ToDoForm from './components/ToDoForm.vue';
+import Header from './components/Header.vue';
+import LoginForm from './components/LoginForm.vue';
 
 export default {
   name: 'App',
   components: {
+    LoginForm,
     ToDoForm,
+    Header,
   }
 }
 </script>
