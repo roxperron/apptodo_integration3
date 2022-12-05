@@ -50,12 +50,12 @@
   export default {
     data() {
       return {
-        todos: ["Learnig Vue 3", "Installing Bootstrap in my app", "Make it beautiful with CSS"],
+        todos: ["Create the Trello board and the task", "Write down the algorithms", "Create the Vue app", "Start coding", "Make it beautiful with CSS"],
         
         userToDo: '',
 
       }
-    },
+    }, 
     methods: {
       addToDo() {
         this.todos.push(this.userToDo);
