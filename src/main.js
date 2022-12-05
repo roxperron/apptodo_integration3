@@ -1,8 +1,8 @@
-/* import "bootstrap/dist/css/bootstrap.min.css" */
+import "bootstrap/dist/css/bootstrap.min.css"
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 
 createApp(App).mount('#app')
 
-/* import "bootstrap/dist/js/bootstrap.js" */
+import "bootstrap/dist/js/bootstrap.js"

@@ -1,7 +1,7 @@
 <template>
-   <div class="header__container">
-    <h1>Bienvenue dans la To Do Liste</h1>
-     <button class="logout__button">Log Out</button>
+   <div class="d-flex justify-content-between py-5">
+    <h1 class="text-primary text-center px-5 ">Bienvenue dans votre To Do Liste</h1>
+     <button class="btn btn-danger">Se déconnecter</button>
    </div>
 </template> 
 
@@ -13,14 +13,7 @@
 </script>
 
 <style>
-.header__container{
-    display: flex;
-    justify-content: space-evenly;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Righteous&display=swap');
 
-.logout__button{
-    margin: 25px;
-    padding: 10px;
-}
 
 </style>
