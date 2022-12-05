@@ -2,7 +2,7 @@
   <form class="container-fluid py-5" action="POST">
 
     <div class="mb-2">
-      <input v-model="userToDo" type="text" class="px-3 form-control" placeholder="Indiquez votre to do ici"
+      <input v-model="userToDo" type="text" class="px-3 form-control" placeholder="Indiquez vos tâches ici"
         aria-label="Indiquer le to do ici" aria-describedby="addToDo__button">
     </div>
 
@@ -22,25 +22,25 @@
   </form>
 
   <div class="d-flex justify-content-between py-2">
-    <h3><span class="badge bg-secondary">Pas de limite</span></h3>
-    <h3><span class="badge bg-secondary">En cours</span></h3>
-    <h3><span class="badge bg-secondary">Dépassée</span></h3>
-    <h3><span class="badge bg-secondary">Complétée</span></h3>
-    <h3><span class="badge bg-secondary">Complétée en retard</span></h3>
+    <h3><span class="badge bg-info">Pas de limite</span></h3>
+    <h3><span class="badge bg-primary">En cours</span></h3>
+    <h3><span class="badge bg-danger">Dépassée</span></h3>
+    <h3><span class="badge bg-success">Complétée</span></h3>
+    <h3><span class="badge bg-warning">Complétée en retard</span></h3>
   </div>
+ 
 
-  <div class="py-2 d-flex justify-content-end">
-    <button type="button" class="btn btn-outline-success">Compléter</button>
-    <button type="button" class="btn btn-outline-warning">Modifier</button>
-    <button type="button" class="btn btn-outline-danger">Supprimer</button>
+
+  <div v-for="todo in todos" v-on:click="deleteToDo(todo)" class="card mx-2">
+  <div class=" d-flex justify-content-between card-body">
+    <h5 class="card-title">{{todo}}</h5>
+   <div>
+    <img src="../assets/complete.png" data-bs-toggle="tooltip" data-bs-title="Default tooltip" alt="Compléter une tâche">
+    <img src="../assets/edit.png" alt="Modifier une tâche">
+    <img src="../assets/delete.png" alt="Supprimer un tâcher">
   </div>
-
-  <ul class="list-group">
-    <li v-for="todo in todos" v-on:click="deleteToDo(todo)" class="list-group-item">
-      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-      {{todo}}
-    </li>
-  </ul>
+  </div>
+</div>
 
 
 </template>
@@ -51,6 +51,7 @@
     data() {
       return {
         todos: ["Learnig Vue 3", "Installing Bootstrap in my app", "Make it beautiful with CSS"],
+        
         userToDo: '',
 
       }
