@@ -1,8 +1,13 @@
 <template>
-   <div class="d-flex justify-content-between py-5">
-    <h1 class="text-dark text-center px-5 ">Bienvenue dans votre To Do Liste !</h1>
-     <button class="btn btn-danger">Se déconnecter</button>
-   </div>
+    <nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/todolist.png" alt="To Do Liste" width="30" height="24" class="d-inline-block align-text-top">
+     To Do App 
+     <img src="../assets/logout.png">
+    </a>
+  </div>
+</nav>
 </template> 
 
 
@@ -13,7 +18,7 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Righteous&display=swap');
+
 
 
 </style>

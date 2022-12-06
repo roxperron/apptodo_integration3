@@ -1,22 +1,21 @@
+
 <template>
- <form class="py-5">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Courriel</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Se connecter</button>
-</form>
+  <form class="py-5 container-fluid w-50">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      <label for="email">Courriel</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+      <label for="password">Mot de passe</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Se connecter</button>
+  </form>
 </template>
 
 
-<script>
-export default{
+<script setup>
 
-}
 
 </script>
 
